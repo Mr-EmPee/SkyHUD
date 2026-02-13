@@ -1,0 +1,8 @@
+$C = "Common.ui";
+
+AssetImage #TimeHudImage {
+  Visible: false;
+
+  Anchor: (Top: 25, Right: 25, Width: 63, Height: 75);
+  AssetPath: "UI/Custom/Images/day.png";
+}

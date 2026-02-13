@@ -1,0 +1,22 @@
+{
+    "Group": "MrEmPee",
+    "Name": "SkyHUD",
+    "Version": "1.0.0-SNAPSHOT",
+    "Description": "Never lose track of the world above while mining or exploring underground. Cave Sky Indicator adds a lightweight, non-intrusive overlay that displays the current surface conditions whenever you are unable to see the sky.",
+    "Authors": [
+        {
+            "Name": "Mr. EmPee",
+            "Email": "empee@null.com",
+            "Url": "https://github.com/Mr-EmPee"
+        }
+    ],
+    "Website": "https://github.com/Mr-EmPee/SkyHUD",
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "Dependencies": {},
+    "OptionalDependencies": {
+        "Buuz135:MultipleHUD": "*"
+    },
+    "ServerVersion": "2026.02.18-f3b8fff95",
+    "Main": "me.empee.skyhud.SkyHudPlugin"
+}

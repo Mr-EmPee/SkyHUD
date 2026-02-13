@@ -1,0 +1,11 @@
+[versions]
+avaje-inject = "12.3"
+
+[libraries]
+lombok = { group = "org.projectlombok", name = "lombok", version = "1.18.42" }
+avajeinject = { group = "io.avaje", name = "avaje-inject", version.ref = "avaje-inject" }
+avajeinject-processor = { group = "io.avaje", name = "avaje-inject-generator", version.ref = "avaje-inject" }
+
+[plugins]
+lombok = { id = "io.freefair.lombok", version = "9.2.0" }
+shadow = { id = "com.gradleup.shadow", version = "9.3.1" }
