@@ -33,7 +33,9 @@ hytale {
     Main = pluginMainClass
 
     ServerVersion = "2026.02.18-f3b8fff95"
+    //TODO Infer from dep
 
+    //TODO Add in gradle prop
     Name = "SkyHUD"
     Description = "Never lose track of the world above while mining or exploring underground. Cave Sky Indicator adds a lightweight, non-intrusive overlay that displays the current surface conditions whenever you are unable to see the sky."
     Website = "https://github.com/Mr-EmPee/SkyHUD"
