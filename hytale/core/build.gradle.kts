@@ -23,11 +23,15 @@ dependencies {
 tasks.shadowJar {
   configurations = listOf(project.configurations.shadow.get())
 
+  val pluginVersion = providers.gradleProperty("plugin.version").get()
+  val pluginMainClass = providers.gradleProperty("plugin.mainClass").get()
+
+  archiveVersion = pluginVersion
   archiveBaseName = rootProject.name
+  archiveClassifier = ""
 
   enableAutoRelocation = true
 
-  val pluginMainClass = providers.gradleProperty("plugin.mainClass").get()
   val relocationBase = pluginMainClass.substringBeforeLast('.').replace('.', '/')
 
   relocationPrefix = "$relocationBase/dependencies"
@@ -36,9 +40,3 @@ tasks.shadowJar {
 
   duplicatesStrategy = DuplicatesStrategy.WARN
 }
-
-// Simple fix when hytale release a new version and gradle doesn't want to fetch
-// configurations.all {
-//   resolutionStrategy.cacheDynamicVersionsFor(0, "seconds")
-//   resolutionStrategy.cacheChangingModulesFor(0, "seconds")
-// }
